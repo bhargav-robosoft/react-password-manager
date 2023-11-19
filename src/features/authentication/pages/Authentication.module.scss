@@ -8,7 +8,7 @@
 
 .auth-container {
   width: 50vw;
-
+  overflow-y: auto;
   border-radius: 15px;
   background: linear-gradient(180deg, #20bbff 0%, #0e85ff 100%);
   box-shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.02);
