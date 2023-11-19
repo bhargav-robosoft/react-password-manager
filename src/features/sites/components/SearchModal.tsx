@@ -23,27 +23,29 @@ const SearchModal = ({
   return (
     <>
       <AppBar onBack={onClose} />
-      <div className={classes.search}>
-        <input
-          type="text"
-          placeholder="Search"
-          onChange={(event) => setSearch(event.target.value)}
-        />
-        <div>
-          <img src={searchIcon} alt="Search" />
-        </div>
-      </div>
-      {search !== "" && (
-        <div className={classes["home-body"]}>
-          <HomeBody
-            mode={mode}
-            onSetMode={setMode}
-            onCloseDrawer={onClose}
-            fromSearchModal={true}
-            searchModalSearch={search}
+      <div className={classes["modal-body"]}>
+        <div className={classes.search}>
+          <input
+            type="text"
+            placeholder="Search"
+            onChange={(event) => setSearch(event.target.value)}
           />
+          <div>
+            <img src={searchIcon} alt="Search" />
+          </div>
         </div>
-      )}
+        {search !== "" && (
+          <div className={classes["home-body"]}>
+            <HomeBody
+              mode={mode}
+              onSetMode={setMode}
+              onCloseDrawer={onClose}
+              fromSearchModal={true}
+              searchModalSearch={search}
+            />
+          </div>
+        )}
+      </div>
     </>
   );
 };
