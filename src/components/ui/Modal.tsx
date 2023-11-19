@@ -5,11 +5,7 @@ import classes from "./Modal.module.scss";
 import Backdrop from "./Backdrop";
 
 const ModalOverlay = ({ children }: React.PropsWithChildren): JSX.Element => {
-  return (
-    <div className={classes.modal}>
-      <div className={classes.content}>{children}</div>
-    </div>
-  );
+  return <div className={classes.modal}>{children}</div>;
 };
 
 const portalElement = document.getElementById("overlays");
