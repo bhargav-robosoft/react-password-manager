@@ -55,13 +55,9 @@
   }
 
   select {
+    all: unset;
     width: 250px;
     height: 37px;
-
-    border: none;
-    padding: unset;
-    outline: none;
-    appearance: none;
 
     background-image: url("../../../../../assets/icons/down-arrow.png");
     background-repeat: no-repeat;
