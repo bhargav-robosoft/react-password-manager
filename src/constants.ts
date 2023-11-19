@@ -1,5 +1,5 @@
-// export const apiEndpoint = "https://go-password.vercel.app/";
-export const apiEndpoint = "http://localhost:8080/";
+export const apiEndpoint = "https://go-password.vercel.app/";
+// export const apiEndpoint = "http://localhost:8080/";
 export const accessTokenStorageKey = "access-token";
 
 export const defaultHeaders = {
