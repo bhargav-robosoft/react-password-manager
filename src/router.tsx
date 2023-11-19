@@ -9,6 +9,10 @@ const router = createBrowserRouter([
   },
   ...authenticationRoutes,
   ...sitesRoutes,
+  {
+    path: "*",
+    element: <Navigate to="/home" />,
+  },
 ]);
 
 export default router;
