@@ -118,11 +118,7 @@ const ChangePasswordModal = ({
   return (
     <>
       <AppBar onBack={onClose} />
-      {isLoading && (
-        <div className={classes.loader}>
-          <Loader />
-        </div>
-      )}
+      {isLoading && <Loader />}
       <div className={classes["modal-body"]}>
         <div className={classes.title}>Change Password</div>
         <form className={classes.form}>
