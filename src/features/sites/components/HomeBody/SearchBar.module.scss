@@ -1,0 +1,107 @@
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px 0px;
+  }
+}
+
+.title {
+  height: 41px;
+  width: 69px;
+  color: #3c4857;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 41px;
+
+  span {
+    border-bottom: 4px solid #ffa136;
+    border-radius: 2px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
+  button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .add-btn {
+    height: 40px;
+    width: 40px;
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #0e85ff;
+  padding-bottom: 5px;
+
+  input {
+    all: unset;
+  }
+
+  ::-ms-input-placeholder {
+    color: #a5a5a5;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+
+  ::placeholder {
+    color: #a5a5a5;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+
+  button {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.web-search {
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-search {
+  display: none;
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}

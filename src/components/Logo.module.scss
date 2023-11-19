@@ -1,0 +1,32 @@
+.logo-name {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  .name {
+    color: #0e85ff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 27px;
+  }
+
+  .logo {
+    height: 60px;
+    width: 50px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    gap: 10px;
+
+    .name {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .logo {
+      height: 40px;
+      width: 35px;
+    }
+  }
+}

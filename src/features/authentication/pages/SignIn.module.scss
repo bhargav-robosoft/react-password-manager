@@ -1,0 +1,29 @@
+.sign-in-container {
+  padding: 75px 40px 25px;
+}
+
+.forgot-password {
+  text-align: end;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sign-up {
+  margin-top: 50px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.sign-in-button {
+  width: 125px;
+  height: 45px;
+  box-sizing: border-box;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}

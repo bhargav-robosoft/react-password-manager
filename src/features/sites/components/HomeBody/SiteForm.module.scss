@@ -1,0 +1,165 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .form-control {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex-grow: 1;
+      width: 100%;
+
+      label {
+        color: #949ca5;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+
+      input {
+        all: unset;
+
+        border: 1px solid #f5f7fb;
+        border-radius: 4px;
+        background-color: #f5f7fb;
+        padding: 10px;
+
+        box-sizing: border-box;
+      }
+
+      input.invalid {
+        // border: 2px solid rgb(246, 204, 70);
+        border: 1px solid red;
+      }
+
+      ::-ms-input-placeholder {
+        color: #a9a9a9;
+        font-size: 16px;
+      }
+
+      ::placeholder {
+        color: #a9a9a9;
+        font-size: 16px;
+      }
+
+      select {
+        border: 1px solid #f5f7fb;
+        border-radius: 4px;
+        background-color: #f5f7fb;
+        padding: 10px;
+
+        outline: none;
+
+        appearance: none;
+        background-image: url("../../../../assets/icons/down-arrow.png");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+
+        color: black;
+        font-size: 16px !important;
+
+        box-sizing: border-box;
+      }
+
+      select.invalid {
+        border: 1px solid red;
+      }
+
+      select.default {
+        color: #a9a9a9;
+      }
+
+      select:active {
+        font-size: 13.33px;
+      }
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+    button {
+      all: unset;
+      cursor: pointer;
+      width: 180px;
+      height: 45px;
+
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 24px;
+      text-align: center;
+
+      border-radius: 4px;
+
+      box-sizing: border-box;
+    }
+
+    button.submit {
+      background-color: #0e85ff;
+      color: white;
+    }
+
+    button.submit:hover {
+      background-color: #0e87ffdf;
+    }
+
+    button.submit:active {
+      background-color: #0e87ffae;
+      border: 1px solid #012d58;
+      font-size: 16px;
+    }
+
+    button:disabled {
+      cursor: auto;
+      background-color: rgb(203, 202, 202) !important;
+      border: unset !important;
+      font-size: unset !important;
+      color: white !important;
+    }
+
+    button.reset {
+      border: 1px solid #0e85ff;
+      color: #0e85ff;
+    }
+
+    button.reset:hover {
+      background-color: rgb(224, 223, 223);
+    }
+
+    button.reset:active {
+      background-color: #0e87ffae;
+      border: 1px solid #012d58;
+      font-size: 16px;
+      color: white;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.input-error {
+  color: red;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 5px;
+}

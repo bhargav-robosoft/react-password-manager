@@ -1,0 +1,75 @@
+.generate-otp-button {
+  width: 135px;
+  height: 45px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+.otp-timer {
+  margin: 20px 0px;
+}
+
+.verify-otp-button {
+  width: 120px;
+  height: 45px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verify-otp-text {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.verify-otp-action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.regenerate-otp-button {
+  width: 180px;
+  height: 45px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regenerate-otp-action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sign-up-button {
+  width: 130px;
+  height: 45px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+.right-cancel {
+  text-align: end;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

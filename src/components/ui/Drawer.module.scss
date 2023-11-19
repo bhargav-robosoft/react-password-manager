@@ -1,0 +1,23 @@
+.drawer {
+  position: fixed;
+  background-color: white;
+  width: 70vw;
+  height: 100vh;
+  z-index: 30;
+  animation: slide-out 300ms ease-in forwards;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+@keyframes slide-out {
+  from {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

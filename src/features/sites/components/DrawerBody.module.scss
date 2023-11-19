@@ -1,0 +1,30 @@
+.drawer-body {
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    padding: 17px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      color: #535353;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 19px;
+    }
+
+    .img {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+
+      img {
+        height: 20px;
+      }
+    }
+  }
+}

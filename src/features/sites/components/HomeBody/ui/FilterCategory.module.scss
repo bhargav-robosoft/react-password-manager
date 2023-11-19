@@ -1,0 +1,91 @@
+.filter {
+  position: relative;
+  width: 250px;
+
+  @media only screen and (max-width: 768px) {
+    width: unset;
+  }
+
+  .count {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+
+    width: 37px;
+    height: 37px;
+    padding: 5px 6px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    background-color: #0e85ff;
+
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 27px;
+
+    text-align: center;
+
+    @media only screen and (max-width: 768px) {
+      width: 30px;
+      height: 30px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  .category-filter {
+    position: absolute;
+    top: 0px;
+    right: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    display: flex;
+    align-items: center;
+
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  select {
+    width: 250px;
+    height: 37px;
+
+    border: none;
+    padding: unset;
+    outline: none;
+    appearance: none;
+
+    background-image: url("../../../../../assets/icons/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+
+    color: black;
+
+    box-sizing: border-box;
+
+    color: #3c4857;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 33px;
+
+    @media only screen and (max-width: 768px) {
+      width: max-content;
+      height: 30px;
+      font-size: 20px;
+      line-height: 25px;
+      color: transparent;
+    }
+  }
+
+  select:active {
+    font-size: 13.33px;
+  }
+}
