@@ -46,7 +46,6 @@ const generateOtpApi = (email: string, type: string) => {
     headers: {
       ...defaultHeaders,
     },
-    credentials: "include",
   });
 };
 
@@ -92,7 +91,6 @@ export const resetPasswordApi = (
       ...defaultHeaders,
       Authorization: "Bearer " + getToken(),
     },
-    credentials: "include",
   });
 };
 
@@ -103,7 +101,6 @@ export const signoutApi = () => {
       ...defaultHeaders,
       Authorization: "Bearer " + getToken(),
     },
-    credentials: "include",
   });
 };
 
@@ -113,6 +110,5 @@ export const checkTokenApi = () => {
     headers: {
       Authorization: "Bearer " + getToken(),
     },
-    credentials: "include",
   });
 };

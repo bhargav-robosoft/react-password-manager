@@ -8,7 +8,6 @@ export const getSitesApi = () => {
     headers: {
       Authorization: "Bearer " + getToken(),
     },
-    credentials: "include",
   });
 };
 
@@ -27,7 +26,6 @@ export const addSiteApi = (site: Site) => {
       ...defaultHeaders,
       Authorization: "Bearer " + getToken(),
     },
-    credentials: "include",
   });
 };
 
@@ -72,7 +70,6 @@ export const editSiteApi = (
       ...defaultHeaders,
       Authorization: "Bearer " + getToken(),
     },
-    credentials: "include",
   });
 };
 
@@ -83,22 +80,5 @@ export const deletSiteApi = (siteId: string) => {
       ...defaultHeaders,
       Authorization: "Bearer " + getToken(),
     },
-    credentials: "include",
   });
 };
-
-// export const checkAuthResponse = async (
-//   decodedResponse: any,
-//   navigate: NavigateFunction,
-//   dispatch: any
-// ) => {
-//   if (decodedResponse["status"] !== 200) {
-//     if (decodedResponse["sessionTimedOut"]) {
-//       dispatch(setUiMessage("Session Timed Out", true));
-//       deleteToken();
-//       navigate("/auth/sign-in");
-//       return true;
-//     }
-//   }
-//   return false;
-// };
