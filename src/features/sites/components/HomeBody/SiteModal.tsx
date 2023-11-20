@@ -69,7 +69,11 @@ const SiteModal = ({
           setMode(undefined);
         }}
       />
-      {isLoading && <Loader />}
+      {true && (
+        <div className={classes.loader}>
+          <Loader />
+        </div>
+      )}
       <div className={classes["modal-body"]}>
         <div className={classes["title-bar"]}>
           <div className={classes.title}>
