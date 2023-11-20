@@ -69,7 +69,7 @@ const SiteModal = ({
           setMode(undefined);
         }}
       />
-      {true && (
+      {isLoading && (
         <div className={classes.loader}>
           <Loader />
         </div>
