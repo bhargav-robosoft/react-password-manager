@@ -46,6 +46,7 @@ const generateOtpApi = (email: string, type: string) => {
     headers: {
       ...defaultHeaders,
     },
+    credentials: "include",
   });
 };
 

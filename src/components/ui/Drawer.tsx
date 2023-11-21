@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 import classes from "./Drawer.module.scss";
@@ -11,11 +11,26 @@ const Drawer = ({
   onClose,
   children,
 }: React.PropsWithChildren<{ onClose: () => void }>) => {
+  const [closing, setClosing] = useState<boolean>(false);
   return (
     <>
-      {ReactDOM.createPortal(<Backdrop onClose={onClose} />, portalElement!)}
       {ReactDOM.createPortal(
-        <div className={classes.drawer}>{children}</div>,
+        <Backdrop
+          onClose={() => {
+            setClosing(true);
+            setTimeout(() => {
+              onClose();
+            }, 300)
+          }}
+        />,
+        portalElement!
+      )}
+      {ReactDOM.createPortal(
+        <div
+          className={[classes.drawer, closing ? classes.close : ""].join(" ")}
+        >
+          {children}
+        </div>,
         portalElement!
       )}
     </>

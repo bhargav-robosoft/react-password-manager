@@ -7,8 +7,8 @@
   animation: slide-out 300ms ease-in forwards;
 }
 
-.drawer.open {
-  transform: translateX(0);
+.close {
+  animation: slide-in 300ms ease-in forwards;
 }
 
 @keyframes slide-out {
@@ -21,3 +21,15 @@
     transform: translateX(0);
   }
 }
+
+@keyframes slide-in {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+}
+
